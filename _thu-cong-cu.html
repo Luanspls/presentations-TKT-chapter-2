@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi" data-chapter="chuong2">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thử công cụ QHTT</title>
+<link rel="stylesheet" href="lib/katex/katex.min.css"><link rel="stylesheet" href="assets/deck.css">
+<style>body{overflow:auto;height:auto;padding:16px;font-size:20px} .w{margin-bottom:24px}</style></head>
+<body>
+<h3>lpgraph VD 2.1</h3><div id="g1" data-widget="lpgraph" data-lp="max 3 5 | 2 1 <= 8 | 0 1 <= 4 | 1 0 <= 3"></div>
+<h3>lpgraph BT 2.13c (vô số)</h3><div id="g2" data-widget="lpgraph" data-lp="max 1 1 | 1 1 >= 1 | 1 1 <= 3"></div>
+<h3>lpgraph không bị chặn</h3><div id="g3" data-widget="lpgraph" data-lp="min -4 2 | -2 1 <= 1 | 1 -3 <= 3"></div>
+<h3>simplex VD 2.11</h3><div data-widget="simplex" data-lp="min 0 3 2 0 -1 0 | 1 -3 0 -4 0 -2 = 6 | 0 2 0 4 1 3 = 5 | 0 1 1 0 0 2 = 1"></div>
+<h3>simplex VD 2.12 (M)</h3><div data-widget="simplex" data-canon="1" data-lp="min 1 4 2 0 | 1 3 -2 1 <= 1 | -1 0 1 2 >= 5 | 1 -2 1 -1 = 2"></div>
+<h3>dual VD 2.14</h3><div data-widget="dual" data-lp="min 1 2 0 3 | 1 3 0 4 >= 4 | -3 2 1 3 >= 3 | dau >=0 >=0 >=0 tuy"></div>
+<h3>transport VD 2.21</h3><div data-widget="transport" data-a="70 45 35 60" data-b="20 40 55 60 35" data-c="5 6 1 4 9; 4 7 3 2 7; 3 3 5 8 2; 7 1 4 4 5"></div>
+<h3>transport VD 2.26 (ô cấm, không cân bằng)</h3><div data-widget="transport" data-a="20 30" data-b="15 25 12" data-c="3 5 2; 1 4 4" data-start="the"></div>
+<h3>pacb VD 2.9</h3><div data-widget="pacb" data-a="1 1 1 1; 0 -1 2 1" data-b="6 4"></div>
+<h3>canon VD 2.7</h3><div data-widget="canon" data-lp="min 2 -1 1 | 1 3 -1 = 6 | 1 -2 0 >= 3 | 2 1 -4 <= 12 | dau >=0 >=0 tuy"></div>
+<div data-widget="canon" data-to="chuan-tac" data-lp="min 2 -1 1 | 1 3 -1 = 6 | 1 -2 0 >= 3 | 2 1 -4 <= 12 | dau >=0 >=0 tuy"></div>
+<script src="lib/katex/katex.min.js"></script><script src="lib/katex/auto-render.min.js"></script>
+<script src="assets/linalg.js"></script><script src="assets/qhtt.js"></script><script src="assets/widgets.js"></script><script src="assets/widgets-qhtt.js"></script>
+<script src="assets/deck.js"></script>
+<script>TKTWidgets.initAll(document.body);</script>
+</body></html>
